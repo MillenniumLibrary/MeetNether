@@ -21,7 +21,7 @@ modId = "meetnether" #mandatory
 # see the associated build.gradle script for how to populate this completely automatically during a build
 version = "${file.jarVersion}" #mandatory
 # A display name for the mod
-displayName = "Meetnether" #mandatory
+displayName = "Meet Nether" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -56,3 +56,21 @@ mandatory = true
 versionRange = "[1.18.2,1.19)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.meetnether]]
+modId = "geckolib3"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "[3.0.27,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.meetnether]]
+modId = "millennium"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"
+
+

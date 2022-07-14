@@ -143,12 +143,14 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories{
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    mavenLocal()
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.60'
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.18:3.0.27')
+    implementation fg.deobf("tt432:millennium:1.18.2-1-2")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
